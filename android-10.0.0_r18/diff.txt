@@ -1,0 +1,13 @@
+diff --git a/java/com/android/incallui/ProximitySensor.java b/java/com/android/incallui/ProximitySensor.java
+index 9719e5d3d..fd458ad62 100644
+--- a/java/com/android/incallui/ProximitySensor.java
++++ b/java/com/android/incallui/ProximitySensor.java
+@@ -63,7 +63,7 @@ public class ProximitySensor
+       @NonNull AccelerometerListener accelerometerListener) {
+     Trace.beginSection("ProximitySensor.Constructor");
+     powerManager = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+-    if (powerManager.isWakeLockLevelSupported(PowerManager.PROXIMITY_SCREEN_OFF_WAKE_LOCK)) {
++    if (false) {
+       proximityWakeLock =
+           powerManager.newWakeLock(PowerManager.PROXIMITY_SCREEN_OFF_WAKE_LOCK, TAG);
+     } else {
